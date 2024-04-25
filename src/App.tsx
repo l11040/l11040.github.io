@@ -6,7 +6,7 @@ function App() {
     <>
       <RootLayout>
         <>
-          본문
+          블로그 공사중!
           <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
           <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
           <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
