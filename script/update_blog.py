@@ -3,6 +3,7 @@ import git
 import os
 from bs4 import BeautifulSoup
 from datetime import datetime
+import requests
 
 # 벨로그 RSS 피드 URL
 rss_url = 'https://api.velog.io/rss/@l11040'
