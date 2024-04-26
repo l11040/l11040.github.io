@@ -25,7 +25,7 @@ export default function Profile({
         <div className="flex flex-wrap justify-center ">
           <div className="flex justify-center w-full animate-bounce">
             <div className="dark:shadow-xl bg-gradient-to-tr from-[#FF8660] to-[#8000FF] rounded-full p-2 max-w-[130px] ">
-              <img src={avatars_URL} className="rounded-full" />
+              <img src={avatars_URL} alt="" className="rounded-full" />
             </div>
           </div>
         </div>

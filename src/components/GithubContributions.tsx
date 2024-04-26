@@ -1,4 +1,3 @@
-import { useEffect, useRef } from "react";
 import GitHubCalendar from "react-github-calendar";
 import Card from "./Card";
 
