@@ -17,8 +17,8 @@ jobs:
 
       - name: Push changes
         run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git config --global user.name 'l11040'
+          git config --global user.email 'l11040@gmail.com'
           git push https://${{ secrets.GH_PAT }}@github.com/l11040/l11040.github.io.git
 
       - name: Set up Python
