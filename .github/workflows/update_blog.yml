@@ -30,7 +30,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install python3-pip -y
-          pip3 install feedparser gitpython beautifulsoup4
+          pip3 install feedparser gitpython beautifulsoup4 requests
 
       - name: Run script
         run: python script/update_blog.py
