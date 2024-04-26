@@ -3,9 +3,9 @@ name: Update Blog Posts
 on:
   push:
     branches:
-      - main # 또는 워크플로우를 트리거하고 싶은 브랜치 이름
+      - main
   schedule:
-    - cron: "0 0 * * *" # 매일 자정에 실행
+    - cron: "0 0 * * *"
 
 jobs:
   update_blog:
@@ -14,12 +14,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-
-      - name: Push changes
-        run: |
-          git config --global user.name 'l11040'
-          git config --global user.email 'l11040@gmail.com'
-          git push https://${{ secrets.GH_PAT }}@github.com/l11040/l11040.github.io.git
 
       - name: Set up Python
         uses: actions/setup-python@v2
@@ -32,3 +26,15 @@ jobs:
 
       - name: Run script
         run: python script/update_blog.py
+
+      - name: Commit and push changes
+        uses: actions/github-script@v4
+        with:
+          github-token: ${{ secrets.GH_PAT }}
+          script: |
+            const { execSync } = require('child_process');
+            execSync('git config --global user.name "github-actions[bot]"');
+            execSync('git config --global user.email "github-actions[bot]@users.noreply.github.com"');
+            execSync('git add .');
+            execSync('git commit -m "Update blog posts"');
+            execSync('git push');
