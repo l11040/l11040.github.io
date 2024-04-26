@@ -1,10 +1,10 @@
-html body
+html
 {
+    @apply antialiased text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-950 min-h-screen;
     margin: none;
 }
 
 body {
-    @apply antialiased text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-950 min-h-screen ;
     margin: none;
 }
 
