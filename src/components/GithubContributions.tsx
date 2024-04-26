@@ -1,13 +1,13 @@
-import { useEffect, useRef } from 'react';
-import GitHubCalendar from 'react-github-calendar';
-import Card from './Card';
+import { useEffect, useRef } from "react";
+import GitHubCalendar from "react-github-calendar";
+import Card from "./Card";
 
 interface GithubContributionsProps {
   username: string;
 }
 
 export default function GithubContributions({
-  username
+  username,
 }: GithubContributionsProps) {
   const selectLastSixMonths = (contributions: any) => {
     const currentDate = new Date();
@@ -26,7 +26,7 @@ export default function GithubContributions({
         username={username}
         hideTotalCount={true}
         transformData={selectLastSixMonths}
-        style={{ margin: 'auto' }}
+        style={{ margin: "auto" }}
       />
     </Card>
   );
