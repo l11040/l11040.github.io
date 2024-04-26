@@ -27,14 +27,15 @@ jobs:
       - name: Run script
         run: python script/update_blog.py
 
+      - name: Configure Git user
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
       - name: Commit and push changes
-        uses: actions/github-script@v4
-        with:
-          github-token: ${{ secrets.GH_PAT }}
-          script: |
-            const { execSync } = require('child_process');
-            execSync('git config --global user.name "github-actions[bot]"');
-            execSync('git config --global user.email "github-actions[bot]@users.noreply.github.com"');
-            execSync('git add .');
-            execSync('git commit -m "Update blog posts"');
-            execSync('git push');
+        env:
+          GH_PAT: ${{ secrets.GH_BOT_PAT }}
+        run: |
+          git add .
+          git commit -m "Add post: 업로드 테스트"
+          git push https://github-actions[bot]:${GH_PAT}@github.com/l11040/l11040.github.io.git
