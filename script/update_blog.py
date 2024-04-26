@@ -26,6 +26,7 @@ feed = feedparser.parse(rss_url)
 
 # 각 글을 파일로 저장하고 커밋
 for entry in feed.entries:
+    current_date = datetime.now().strftime('%Y-%m-%d')
     # 파일 이름에서 유효하지 않은 문자 제거 또는 대체
     file_name = entry.title
     file_name = file_name.replace('/', '-')  # 슬래시를 대시로 대체
@@ -48,7 +49,7 @@ for entry in feed.entries:
 title: {entry.title}
 tags:
 {''.join([f'  - {tag}\n' for tag in tags])}
-date: {entry.pubDate}
+date: {current_date}
 ---
 {entry.description}
 '''
