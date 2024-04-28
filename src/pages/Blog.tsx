@@ -25,7 +25,7 @@ const Blog = () => {
 
   return (
     <>
-      <Card className="mx-auto overflow-x-hidden card p-5">
+      <Card className="card mx-auto overflow-x-hidden p-5">
         {post != null && <NotionRenderer blockMap={post} />}
       </Card>
     </>

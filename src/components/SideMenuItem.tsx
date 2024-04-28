@@ -11,14 +11,14 @@ export default function SideMenuItem({ icon, label, href }: SideMenuItemProps) {
     <li className="flex-grow cursor-pointer">
       <a
         href={href}
-        className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+        className="group flex items-center rounded-lg p-2 text-gray-900 hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700"
       >
-        <div className="mx-auto flex items-center justify-center flex-shrink-0 w-5 h-5 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white">
+        <div className="mx-auto flex h-5 w-5 flex-shrink-0 items-center justify-center text-gray-500 transition duration-75 group-hover:text-gray-900 dark:text-gray-400 dark:group-hover:text-white">
           {icon}
         </div>
 
         {/* sm 사이즈에서는 label 숨김 */}
-        <span className="flex-1 ms-3 whitespace-nowrap md:flex hidden">
+        <span className="ms-3 hidden flex-1 whitespace-nowrap md:flex">
           {label}
         </span>
       </a>

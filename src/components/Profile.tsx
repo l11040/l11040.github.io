@@ -23,8 +23,8 @@ export default function Profile({
     <Card>
       <div className="pb-6">
         <div className="flex flex-wrap justify-center ">
-          <div className="flex justify-center w-full animate-bounce">
-            <div className="dark:shadow-xl bg-gradient-to-tr from-[#FF8660] to-[#8000FF] rounded-full p-2 max-w-[130px] ">
+          <div className="flex w-full animate-bounce justify-center">
+            <div className="max-w-[130px] rounded-full bg-gradient-to-tr from-[#FF8660] to-[#8000FF] p-2 dark:shadow-xl ">
               <img src={avatars_URL} alt="" className="rounded-full" />
             </div>
           </div>
@@ -33,38 +33,38 @@ export default function Profile({
         <div className="mt-2 text-center">
           {/* class="text-transparent bg-clip-text bg-gradient-to-tr from-[#FF8660] to-[#8000FF]" */}
           <h3 className="mb-1 text-2xl font-bold leading-normal text-gray-700 dark:text-gray-300 ">
-            <span className="text-transparent bg-clip-text bg-gradient-to-tr from-[#FF8660] to-[#8000FF]">
+            <span className="bg-gradient-to-tr from-[#FF8660] to-[#8000FF] bg-clip-text text-transparent">
               {name}
             </span>
           </h3>
-          <div className="flex flex-row justify-center w-full mx-auto space-x-2 text-center">
+          <div className="mx-auto flex w-full flex-row justify-center space-x-2 text-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="w-4 h-4 text-gray-400"
+              className="h-4 w-4 text-gray-400"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
               <path d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"></path>
             </svg>
-            <div className="text-lg font-bold tracking-wide text-gray-600 dark:text-gray-300 font-mono">
+            <div className="font-mono text-lg font-bold tracking-wide text-gray-600 dark:text-gray-300">
               {location}
             </div>
           </div>
-          <div className="text-sm font-bold tracking-wide text-gray-600 dark:text-gray-300 font-mono">
+          <div className="font-mono text-sm font-bold tracking-wide text-gray-600 dark:text-gray-300">
             {job}
           </div>
           <div className="w-full text-center">
-            <div className="flex justify-center pt-8 pb-0 lg:pt-4">
+            <div className="flex justify-center pb-0 pt-8 lg:pt-4">
               <div className="flex space-x-2">
                 <a
-                  className="p-1 -m-1 text-gray-400 hover:text-amber-500 focus:outline-none focus-visible:ring-2 ring-primary"
+                  className="ring-primary -m-1 p-1 text-gray-400 hover:text-amber-500 focus:outline-none focus-visible:ring-2"
                   href={github_URL}
                   rel="noopener noreferrer"
                   aria-label="Ariel Cerda on Github"
                   target="_blank"
                 >
                   <svg
-                    className="w-6 h-6 overflow-visible fill-current"
+                    className="h-6 w-6 overflow-visible fill-current"
                     aria-hidden="true"
                     viewBox="0 0 140 140"
                   >
@@ -98,14 +98,14 @@ export default function Profile({
                                         </svg>
                                     </a> */}
                 <a
-                  className="p-1 -m-1 text-gray-400 hover:text-amber-500 focus:outline-none focus-visible:ring-2 ring-primary"
+                  className="ring-primary -m-1 p-1 text-gray-400 hover:text-amber-500 focus:outline-none focus-visible:ring-2"
                   href={instagram_URL}
                   rel="noopener noreferrer"
                   aria-label="Ariel Cerda on Instagram"
                   target="_blank"
                 >
                   <svg
-                    className="w-6 h-6 overflow-visible fill-current"
+                    className="h-6 w-6 overflow-visible fill-current"
                     aria-hidden="true"
                     viewBox="0 0 140 140"
                     xmlns="http://www.w3.org/2000/svg"
@@ -117,7 +117,7 @@ export default function Profile({
             </div>
           </div>
         </div>
-        <div className="pt-6 mx-6 mt-6 text-center border-t border-gray-200 dark:border-gray-700/50 ">
+        <div className="mx-6 mt-6 border-t border-gray-200 pt-6 text-center dark:border-gray-700/50 ">
           <div className="flex flex-wrap justify-center">
             <div className="w-full px-6">
               <p className="mb-4 font-light leading-relaxed text-gray-600 dark:text-gray-400">
