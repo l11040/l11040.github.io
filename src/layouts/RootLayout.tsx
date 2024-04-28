@@ -11,7 +11,7 @@ export default function RootLayout({ children }: LayoutProps) {
   return (
     <>
       <div className="max-w-screen-xl md:pt-8 xl:lg:md:sm:mx-auto">
-        <div className="flex h-auto flex-col justify-between gap-4 px-6 py-8 md:flex-row">
+        <div className="flex h-auto flex-col justify-between gap-8 px-6 py-8 pb-[100px] md:flex-row md:pb-8">
           <div className="w-full md:w-auto ">
             <div className="top-10 mx-auto flex max-w-[400px] flex-col gap-4 md:sticky">
               <Profile
