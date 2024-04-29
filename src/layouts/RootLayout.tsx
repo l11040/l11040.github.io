@@ -11,9 +11,9 @@ export default function RootLayout({ children }: LayoutProps) {
   return (
     <>
       <div className="max-w-screen-xl md:pt-8 xl:lg:md:sm:mx-auto">
-        <div className="flex h-auto flex-col justify-between gap-8 px-3 py-4 pb-[100px] md:flex-row md:pb-8">
-          <div className="h-full w-full md:w-auto ">
-            <div className="z-10 mx-auto flex flex-col gap-4 md:sticky md:top-10">
+        <div className="flex flex-col justify-between gap-8 px-3 py-4 pb-[100px] md:flex-row md:pb-8">
+          <div className="h-auto w-full md:w-auto">
+            <div className="mx-auto flex flex-col gap-4 md:sticky md:top-10">
               <Profile
                 avatars_URL="https://avatars.githubusercontent.com/u/113540683?v=4"
                 name="Lee Jong Youn"

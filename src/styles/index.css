@@ -1,19 +1,18 @@
 html {
   @apply antialiased text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-950 min-h-screen;
   margin: none;
-  overflow-x: hidden;
+  overflow-x: clip;
   max-width: 100%;
 }
 
 body {
   margin: none;
-  overflow-x: hidden;
+  overflow-x: clip;
   max-width: 100%;
 }
 
 .react-activity-calendar__scroll-container {
   max-width: 300px;
-  overflow-x: hidden;
 }
 
 * {
