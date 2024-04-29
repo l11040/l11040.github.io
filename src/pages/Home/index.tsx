@@ -1,6 +1,5 @@
 import useGetNotionTable from "../../api/useGetNotionTable";
 import NotionPosts from "../../components/NotionPosts";
-import RootLayout from "../../layouts/RootLayout";
 
 export default function Home() {
   const { data: blogPosts } = useGetNotionTable(
@@ -8,9 +7,7 @@ export default function Home() {
   );
   return (
     <>
-      <RootLayout>
-        <NotionPosts blogPosts={blogPosts} />
-      </RootLayout>
+      <NotionPosts blogPosts={blogPosts} />
     </>
   );
 }
