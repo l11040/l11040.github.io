@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/l11040.github.io/static/css/main.b88a53ca.css",
-    "main.js": "/l11040.github.io/static/js/main.a16d5104.js",
+    "main.js": "/l11040.github.io/static/js/main.f0d6a582.js",
     "static/media/books.svg": "/l11040.github.io/static/media/books.335bedca9b59f9c82a4d088609518332.svg",
     "static/media/edit.svg": "/l11040.github.io/static/media/edit.6cfd42edcc83253f7a64e51437790cbd.svg",
     "static/media/objects.svg": "/l11040.github.io/static/media/objects.697e51280b6ab5a43a4a4d881847f8f3.svg",
@@ -11,10 +11,10 @@
     "static/media/fire.svg": "/l11040.github.io/static/media/fire.329f6052c46f337bc8051df2510c2755.svg",
     "static/media/book.svg": "/l11040.github.io/static/media/book.decd1c34f0e0cbff2ed5ddb9df66a3dd.svg",
     "main.b88a53ca.css.map": "/l11040.github.io/static/css/main.b88a53ca.css.map",
-    "main.a16d5104.js.map": "/l11040.github.io/static/js/main.a16d5104.js.map"
+    "main.f0d6a582.js.map": "/l11040.github.io/static/js/main.f0d6a582.js.map"
   },
   "entrypoints": [
     "static/css/main.b88a53ca.css",
-    "static/js/main.a16d5104.js"
+    "static/js/main.f0d6a582.js"
   ]
 }
