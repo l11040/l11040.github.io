@@ -4,7 +4,7 @@ import App from "./pages/App";
 import "./styles/index.css";
 import { QueryClient, QueryClientProvider } from "react-query";
 
-import { BrowserRouter as Router } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 
 const queryClient = new QueryClient();
 
