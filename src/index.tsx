@@ -14,7 +14,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
-      <Router basename="{process.env.PUBLIC_URL}">
+      <Router basename="/l11040.github.io">
         <App />
       </Router>
     </QueryClientProvider>
