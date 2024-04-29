@@ -20,13 +20,15 @@ export default function GithubContributions({
   };
 
   return (
-    <Card className="!overflow-x-hidden">
-      <GitHubCalendar
-        username={username}
-        hideTotalCount={true}
-        transformData={selectLastSixMonths}
-        style={{ margin: "auto" }}
-      />
+    <Card>
+      <div className="mx-auto w-[300px] overflow-hidden">
+        <GitHubCalendar
+          username={username}
+          hideTotalCount={true}
+          transformData={selectLastSixMonths}
+          style={{ margin: "auto" }}
+        />
+      </div>
     </Card>
   );
 }

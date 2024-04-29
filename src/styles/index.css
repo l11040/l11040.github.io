@@ -1,10 +1,12 @@
 html {
   @apply antialiased text-slate-500 dark:text-slate-400 bg-white dark:bg-slate-950 min-h-screen;
   margin: none;
+  overflow-x: hidden;
 }
 
 body {
   margin: none;
+  overflow-x: hidden;
 }
 
 .react-activity-calendar__scroll-container {
