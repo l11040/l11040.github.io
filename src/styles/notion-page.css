@@ -1,0 +1,11 @@
+.notion {
+  @apply antialiased text-slate-800 dark:text-slate-200;
+}
+
+.notion-asset-wrapper {
+  width: auto !important;
+}
+
+.notion-asset-wrapper>div {
+  padding-bottom: 0px !important;
+}
