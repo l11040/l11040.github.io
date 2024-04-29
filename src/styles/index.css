@@ -6,7 +6,7 @@ html {
 
 body {
   margin: none;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .react-activity-calendar__scroll-container {
