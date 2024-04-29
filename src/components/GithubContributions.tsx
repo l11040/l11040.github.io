@@ -20,7 +20,7 @@ export default function GithubContributions({
   };
 
   return (
-    <Card>
+    <Card className="!overflow-x-hidden">
       <GitHubCalendar
         username={username}
         hideTotalCount={true}

@@ -1,19 +1,18 @@
-import useGetNotionTable from "../api/useGetNotionTable";
-import NotionPosts from "../components/NotionPosts";
+import { Route, Routes } from "react-router-dom";
+import "../styles/app.css";
+import Home from "./Home";
 import RootLayout from "../layouts/RootLayout";
-import "../styles/App.css";
+import Blog from "./Blog";
+import Post from "./Blog/post";
 
-function App() {
-  const { data: blogPosts } = useGetNotionTable(
-    "3723371501ca4ebba16f4ca8f65c5785",
-  );
+export default function App() {
   return (
-    <>
-      <RootLayout>
-        <NotionPosts blogPosts={blogPosts} />
-      </RootLayout>
-    </>
+    <RootLayout>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:pageId" element={<Post />} />
+      </Routes>
+    </RootLayout>
   );
 }
-
-export default App;

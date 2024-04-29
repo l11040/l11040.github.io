@@ -7,7 +7,14 @@ body {
   margin: none;
 }
 
+.react-activity-calendar__scroll-container {
+  max-width: 300px;
+  overflow-x: hidden;
+}
+
+
 * {
+
   /* 스크롤바의 스타일을 정의합니다. */
   ::-webkit-scrollbar {
     width: 10px;
