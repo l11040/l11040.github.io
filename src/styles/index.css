@@ -6,14 +6,12 @@ html {
 
 body {
   margin: none;
-  /* overflow-x: hidden; */
 }
 
 .react-activity-calendar__scroll-container {
   max-width: 300px;
   overflow-x: hidden;
 }
-
 
 * {
 
