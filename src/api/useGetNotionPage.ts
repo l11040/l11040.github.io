@@ -1,12 +1,10 @@
 import { useQuery } from "react-query";
 import { apiClient } from "./api-config";
-import { NotionTableType } from "../types/notion";
+import { BlockMapType } from "react-notion";
 
 export const GET_NOTION_PAGE = "/useGetNotionPage";
 
-const fetcher = async (
-  pageId?: string,
-): Promise<NotionTableType[] | undefined> => {
+const fetcher = async (pageId?: string): Promise<BlockMapType | undefined> => {
   if (!pageId) return undefined;
   const { data } = await apiClient.get<any>(`/page/${pageId}`);
   return data;
