@@ -6,7 +6,7 @@ import SkeletonPost from "../../components/SkeletonPost";
 
 export default function Post() {
   const { pageId } = useParams();
-  const { data: post, isLoading, isFetching } = useGetNotionPage(pageId);
+  const { data: post, isLoading } = useGetNotionPage(pageId);
 
   return <>{isLoading ? <SkeletonPost /> : <NotionPost blockMap={post} />}</>;
 }
