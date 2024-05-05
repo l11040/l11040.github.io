@@ -7,6 +7,7 @@ import "../styles/notion-page.css";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { NotionTableType } from "../types/notion";
+import useImageZoom from "../hooks/useImageZoom";
 
 interface NotionPostProps {
   blockMap?: BlockMapType;
@@ -15,6 +16,9 @@ interface NotionPostProps {
 export default function NotionPost({ blockMap }: NotionPostProps) {
   const { pageId } = useParams();
   const [titleInfo, setTitleInfo] = useState<NotionTableType>();
+
+  const { ref: galleryRef, Modal } = useImageZoom();
+
   useEffect(() => {
     if (blockMap && pageId) {
       const value = blockMap[pageId].value["properties"];
@@ -27,8 +31,13 @@ export default function NotionPost({ blockMap }: NotionPostProps) {
       });
     }
   }, [blockMap]);
+
   return (
-    <div className="flex flex-col gap-2">
+    <div
+      data-dialog-target="image-dialog"
+      className="flex flex-col gap-2"
+      ref={galleryRef}
+    >
       <Card>
         <div className="px-6 pb-2 pt-4">
           <div className="mb-2 text-4xl font-bold text-slate-700 dark:text-slate-200">
@@ -56,6 +65,7 @@ export default function NotionPost({ blockMap }: NotionPostProps) {
         </div>
       </Card>
       <Card>{blockMap != null && <NotionRenderer blockMap={blockMap} />}</Card>
+      <Modal />
     </div>
   );
 }
