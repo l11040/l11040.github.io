@@ -39,4 +39,7 @@
 
 .notion-image-inset {
   border-radius: 0.4rem;
+  max-height: 500px !important;
+  width: auto !important;
+  margin: auto !important;
 }
