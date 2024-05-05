@@ -9,3 +9,34 @@
 .notion-asset-wrapper>div {
   padding-bottom: 0px !important;
 }
+
+.notion-orange_background,
+.notion-teal_background,
+.notion-purple_background,
+.notion-gray_background,
+.notion-brown_background,
+.notion-yellow_background,
+.notion-blue_background,
+.notion-pink_background,
+.notion-red_background {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --tw-text-opacity: 1;
+  color: rgb(30 41 59 / var(--tw-text-opacity));
+}
+
+.notion-callout {
+  border-radius: 0.4rem;
+  --tw-border-opacity: 1;
+  border-color: rgb(55 65 81 / var(--tw-border-opacity));
+}
+
+.notion-code {
+  border-radius: 0.4rem;
+  @apply !bg-slate-800 dark:bg-slate-900 !important;
+  /* background: #3b3b3b !important; */
+}
+
+.notion-image-inset {
+  border-radius: 0.4rem;
+}
