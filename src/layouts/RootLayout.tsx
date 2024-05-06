@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import GithubContributions from "../components/GithubContributions";
 import Profile from "../components/Profile";
 import SideMenu from "../components/SideMenu";
+import TopButton from "../components/TopButton";
 
 interface LayoutProps {
   children: ReactNode;
@@ -32,6 +33,7 @@ export default function RootLayout({ children }: LayoutProps) {
           </div>
         </div>
       </div>
+      <TopButton />
     </>
   );
 }
