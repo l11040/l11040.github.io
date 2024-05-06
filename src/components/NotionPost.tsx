@@ -22,7 +22,6 @@ export default function NotionPost({ blockMap }: NotionPostProps) {
   useEffect(() => {
     if (blockMap && pageId) {
       const value = blockMap[pageId].value["properties"];
-      console.debug(blockMap[pageId].value["properties"]);
       setTitleInfo({
         title: value.title[0],
         description: value.JIFT[0],
