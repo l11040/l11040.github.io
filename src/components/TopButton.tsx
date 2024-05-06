@@ -35,10 +35,10 @@ export default function TopButton() {
         <button
           onClick={goToTop}
           className="fixed  bottom-[7rem] right-5 z-50 h-14 w-14 rounded-full border-0 
-          bg-gradient-to-tr from-[#FF8660] to-[#8000FF] p-4 text-lg font-semibold text-white shadow-md transition-colors duration-300 hover:opacity-80 md:bottom-10 md:right-10 dark:shadow-xl"
+          bg-gradient-to-tr from-[#FF8660] to-[#8000FF] p-4 text-lg font-semibold text-white transition-colors duration-300 hover:opacity-80 md:bottom-10 md:right-10 dark:shadow-xl"
         >
           <svg
-            className="h-6 w-6 text-gray-800 dark:text-white"
+            className="h-6 w-6 text-white"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
