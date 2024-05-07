@@ -11,7 +11,7 @@ export default function ContentsLayout({
   title,
 }: ContentsLayoutProps) {
   return (
-    <div className="mt-4 flex flex-col gap-4">
+    <div className="mt-4 flex flex-col gap-5">
       <TypoHeader title={title} />
       {children}
     </div>
