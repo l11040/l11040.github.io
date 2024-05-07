@@ -12,7 +12,7 @@ export default function RootLayout({ children }: LayoutProps) {
   return (
     <>
       <div className="max-w-screen-xl md:pt-8 xl:lg:md:sm:mx-auto">
-        <div className="flex flex-col justify-between gap-4 overflow-x-clip px-3 py-4 pb-[100px] md:flex-row md:pb-8">
+        <div className="flex flex-col justify-between gap-10 overflow-x-clip px-3 py-4 pb-[100px] md:flex-row md:gap-4 md:pb-8">
           <div className="h-auto w-full md:w-auto">
             <div className="mx-auto flex flex-col gap-4 md:sticky md:top-10">
               <Profile
