@@ -1,7 +1,4 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable no-script-url */
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import { RefObject, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const useImageZoom = () => {
   const ref = useRef<HTMLDivElement>(null);
