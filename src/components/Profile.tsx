@@ -116,6 +116,12 @@ export default function Profile({
               </div>
             </div>
           </div>
+
+          <div className="flex justify-center pb-0 pt-8 lg:pt-4">
+            <a href="https://hits.seeyoufarm.com">
+              <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fl11040.github.io&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=View&edge_flat=false" />
+            </a>
+          </div>
         </div>
         <div className="mx-6 mt-6 border-t border-gray-200 pt-6 text-center dark:border-gray-700/50 ">
           <div className="flex flex-wrap justify-center">
