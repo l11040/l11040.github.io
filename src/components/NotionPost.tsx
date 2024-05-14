@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { NotionTableType } from "../types/notion";
 import useImageZoom from "../hooks/useImageZoom";
+import GithubComment from "./GithubComment";
 
 interface NotionPostProps {
   blockMap?: BlockMapType;
@@ -65,6 +66,9 @@ export default function NotionPost({ blockMap }: NotionPostProps) {
       </Card>
       <Card>{blockMap != null && <NotionRenderer blockMap={blockMap} />}</Card>
       <Modal />
+      <Card>
+        <GithubComment />
+      </Card>
     </div>
   );
 }
