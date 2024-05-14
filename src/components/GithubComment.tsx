@@ -8,7 +8,7 @@ export default function GithubComment() {
     scriptEl.async = true;
     scriptEl.src = "https://utteranc.es/client.js";
     scriptEl.setAttribute("repo", "l11040/l11040.github.io");
-    scriptEl.setAttribute("issue-term", "pathname");
+    scriptEl.setAttribute("issue-term", "title");
     scriptEl.setAttribute("theme", "preferred-color-scheme");
     scriptEl.setAttribute("crossorigin", "anonymous");
     commentsEl.current?.appendChild(scriptEl);
