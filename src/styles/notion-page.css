@@ -1,12 +1,18 @@
 .notion {
-  @apply antialiased text-slate-800 dark:text-slate-200;
+  @apply text-slate-800 antialiased dark:text-slate-200;
+}
+.notion-bookmark {
+  height: 120px;
+  * {
+    @apply text-slate-800 antialiased dark:text-slate-200;
+  }
 }
 
 .notion-asset-wrapper {
   width: auto !important;
 }
 
-.notion-asset-wrapper>div {
+.notion-asset-wrapper > div {
   padding-bottom: 0px !important;
 }
 
@@ -25,6 +31,7 @@
   color: rgb(30 41 59 / var(--tw-text-opacity));
 }
 
+.notion-bookmark,
 .notion-callout {
   border-radius: 0.4rem;
   --tw-border-opacity: 1;
