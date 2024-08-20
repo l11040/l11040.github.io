@@ -10,12 +10,8 @@ export default function SideMenu() {
         <ul className="flex flex-wrap justify-center gap-2 pb-3 font-medium md:flex-col md:pb-0">
           {/* <SideMenuItem icon={<Objects />} label="Home" href="/" /> */}
           <SideMenuItem icon={<Fire />} label="Skills" href="/skills" />
-          <SideMenuItem
-            icon={<Book />}
-            label="Project | Portfolio"
-            href="project"
-          />
           <SideMenuItem icon={<People />} label="Career" href="career" />
+          <SideMenuItem icon={<Book />} label="Project" href="project" />
           <SideMenuItem icon={<Edit />} label="Blog" href="blog" />
           {/* <SideMenuItem icon={<Atom />} label="Art" href="art" /> */}
         </ul>
