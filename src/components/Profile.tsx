@@ -23,9 +23,11 @@ export default function Profile({
     <Card>
       <div className="pb-6">
         <div className="flex flex-wrap justify-center ">
-          <div className="flex w-full animate-bounce justify-center">
+          <div className="flex w-full justify-center">
             <div className="max-w-[130px] rounded-full bg-gradient-to-tr from-[#FF8660] to-[#8000FF] p-2 dark:shadow-xl ">
-              <img src={avatars_URL} alt="" className="rounded-full" />
+              <a href="/">
+                <img src={avatars_URL} alt="" className="rounded-full" />
+              </a>
             </div>
           </div>
         </div>

@@ -42,6 +42,7 @@ const useImageZoom = () => {
           <div
             id="modal"
             className="z-80 fixed left-0 top-0 flex h-screen w-screen items-center justify-center bg-black/70"
+            style={{ zIndex: 80 }}
             onClick={handleCloseModal}
           >
             <a
