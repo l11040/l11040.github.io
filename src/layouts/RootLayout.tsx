@@ -19,7 +19,7 @@ export default function RootLayout({ children }: LayoutProps) {
                 avatars_URL="https://avatars.githubusercontent.com/u/113540683?v=4"
                 name="Lee Jong Youn"
                 location="Korea"
-                job="Front-End/Game Dev/Game Artist"
+                job="Front End/Game Dev"
                 github_URL="https://github.com/l11040"
                 instagram_URL="https://www.instagram.com/repapeel/"
                 desc="안녕하세요 이종윤입니다."
