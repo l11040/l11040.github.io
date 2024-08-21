@@ -54,3 +54,8 @@
   width: auto !important;
   margin: auto !important;
 }
+
+iframe.notion-image-inset {
+  aspect-ratio: 16/9;
+  width: 100% !important;
+}
