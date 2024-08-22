@@ -9,6 +9,8 @@ import { useParams } from "react-router-dom";
 import useImageZoom from "../hooks/useImageZoom";
 import { Helmet } from "react-helmet";
 import { NotionProjectPostCardProps } from "./NotionProjectPostCard";
+import useTableOfContents from "../hooks/useTableOfContents";
+import TableOfContentsPortal from "./TableOfContentsPortal";
 
 interface NotionPostProps {
   blockMap?: BlockMapType;
@@ -24,7 +26,7 @@ export default function NotionProjectPost({ blockMap }: NotionPostProps) {
   useEffect(() => {
     if (blockMap && pageId) {
       const value = blockMap[pageId].value["properties"];
-      console.log(value);
+
       setTitle(value.title[0]);
       setTitleInfo({
         title: value.title[0],
@@ -36,8 +38,13 @@ export default function NotionProjectPost({ blockMap }: NotionPostProps) {
     }
   }, [blockMap]);
 
+  const { ref, headings } = useTableOfContents();
+
   return (
     <>
+      {headings.length > 0 && (
+        <TableOfContentsPortal headings={headings} containerId="index" />
+      )}
       <Helmet>
         <title>{title}</title>
       </Helmet>
@@ -74,7 +81,9 @@ export default function NotionProjectPost({ blockMap }: NotionPostProps) {
           </div>
         </Card>
         <Card>
-          {blockMap != null && <NotionRenderer blockMap={blockMap} />}
+          <div ref={ref}>
+            {blockMap != null && <NotionRenderer blockMap={blockMap} />}
+          </div>
         </Card>
         <Modal />
       </div>

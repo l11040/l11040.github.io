@@ -12,8 +12,8 @@ export default function RootLayout({ children }: LayoutProps) {
   return (
     <>
       <div className="max-w-screen-xl md:pt-8 xl:lg:md:sm:mx-auto">
-        <div className="flex flex-col justify-between gap-10 overflow-x-clip px-3 py-4 pb-[100px] md:flex-row md:gap-4 md:pb-8">
-          <div className="h-auto w-full md:w-auto">
+        <div className="flex flex-col justify-between gap-10 overflow-x-clip p-0 pb-[100px] pt-4 md:flex-row md:gap-4 md:pb-8">
+          <div className="h-auto w-full md:max-w-[334px]">
             <div className="mx-auto flex h-full flex-col gap-4">
               <Profile
                 avatars_URL="https://avatars.githubusercontent.com/u/113540683?v=4"
@@ -25,8 +25,9 @@ export default function RootLayout({ children }: LayoutProps) {
                 desc="안녕하세요 이종윤입니다."
               />
               <GithubContributions username={"l11040"} />
-              <div className="md:sticky md:top-10">
-                <SideMenu />
+              <SideMenu />
+              <div className="flex flex-col gap-4 md:sticky md:top-10">
+                <div id="index" className="collapse z-10 md:visible"></div>
               </div>
             </div>
           </div>
