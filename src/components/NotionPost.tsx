@@ -10,6 +10,8 @@ import { NotionTableType } from "../types/notion";
 import useImageZoom from "../hooks/useImageZoom";
 import GithubComment from "./GithubComment";
 import { Helmet } from "react-helmet";
+import useTableOfContents from "../hooks/useTableOfContents";
+import TableOfContentsPortal from "./TableOfContentsPortal";
 
 interface NotionPostProps {
   blockMap?: BlockMapType;
@@ -35,8 +37,13 @@ export default function NotionPost({ blockMap }: NotionPostProps) {
     }
   }, [blockMap]);
 
+  const { ref, headings } = useTableOfContents();
+
   return (
     <>
+      {headings.length > 0 && (
+        <TableOfContentsPortal headings={headings} containerId="index" />
+      )}
       <Helmet>
         <title>{title}</title>
       </Helmet>
@@ -72,7 +79,9 @@ export default function NotionPost({ blockMap }: NotionPostProps) {
           </div>
         </Card>
         <Card>
-          {blockMap != null && <NotionRenderer blockMap={blockMap} />}
+          <div ref={ref}>
+            {blockMap != null && <NotionRenderer blockMap={blockMap} />}
+          </div>
         </Card>
         <Modal />
         <Card>{title && <GithubComment />}</Card>

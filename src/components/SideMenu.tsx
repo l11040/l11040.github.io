@@ -5,7 +5,7 @@ import SideMenuItem from "./SideMenuItem";
 export default function SideMenu() {
   return (
     // rounded - xl
-    <div className="fixed bottom-0 left-0 right-0 z-20 md:relative">
+    <div className="z-1 fixed bottom-0 left-0 right-0 md:relative">
       <Card className="rounded-b-none !py-2 md:rounded-xl md:!p-4">
         <ul className="flex flex-wrap justify-center gap-2 pb-3 font-medium md:flex-col md:pb-0">
           {/* <SideMenuItem icon={<Objects />} label="Home" href="/" /> */}
